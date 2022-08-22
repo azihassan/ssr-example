@@ -21,7 +21,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/google1e9c80e5dd0f8907.html"
+              "src/google1e9c80e5dd0f8907.html",
+              "src/BingSiteAuth.xml"
             ],
             "styles": [
               "src/styles.css"
