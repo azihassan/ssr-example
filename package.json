@@ -4,13 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && ng run csr-example:server",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run csr-example:serve-ssr",
     "serve:ssr": "node dist/csr-example/server/main.js",
     "build:ssr": "ng build && ng run csr-example:server",
-    "prerender": "ng run csr-example:prerender"
+    "prerender": "ng run csr-example:prerender",
+    "start:heroku": "npm run serve:ssr",
+    "postinstall": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
