@@ -15,6 +15,11 @@ export class AppComponent {
   ) {}
 
   ngOnInit() {
+    this.loadData();
+  }
+
+  loadData() {
+    this.todos = [];
     this.http.get<Todo[]>('https://jsonplaceholder.typicode.com/todos').subscribe(
       (success) => {
         this.todos = success;
